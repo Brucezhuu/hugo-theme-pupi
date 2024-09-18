@@ -1,0 +1,30 @@
+// Mixins
+
+@mixin transition-all() {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@mixin monospace() {
+  font-family: monospace;
+}
+
+@mixin serif() {
+  font-family: serif;
+}
+
+@mixin sans-serif() {
+  font-family:
+    system-ui
+    sans-serif;               // System Fallback
+
+  line-height: 1.7;
+}
